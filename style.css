@@ -1,0 +1,33 @@
+/* font-family: "Baloo Da 2", sans-serif; */
+/* font-weight: 400 - 800 */
+/* font-family: "Josefin Sans", sans-serif; */
+/* font-weight: 100 - 700 */
+/* font-family: "Mulish", sans-serif; */
+/* font-weight: 200 - 1000 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+}
+a,
+button,
+input[type="submit"] {
+  cursor: pointer;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  object-fit: cover;
+}

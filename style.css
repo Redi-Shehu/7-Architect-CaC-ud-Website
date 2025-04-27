@@ -1,6 +1,6 @@
 /* font-family: "Baloo Da 2", sans-serif; */
 /* font-weight: 400 - 800 */
-/* font-family: "Josefin Sans", sans-serif; */
+/* font-family: "Josefin Slab", serif; */
 /* font-weight: 100 - 700 */
 /* font-family: "Mulish", sans-serif; */
 /* font-weight: 200 - 1000 */
@@ -12,12 +12,16 @@
   box-sizing: border-box;
 }
 :root {
+  --primary-font: "Baloo Da 2", sans-serif;
+  --secondary-font: "Josefin Slab", serif;
+  --tertiary-font: "Mulish", sans-serif;
 }
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 body {
+  line-height: 1;
 }
 a,
 button,
@@ -30,4 +34,127 @@ ul {
 }
 img {
   object-fit: cover;
+  display: block;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+fieldset {
+  border: none;
+}
+/* --------------------------------------- */
+.container {
+}
+.hamburger-menu {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+.line-1 {
+}
+.line-2 {
+}
+.line-3 {
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.header__image {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.header__image-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  animation: scaleBg 25s;
+  animation-fill-mode: forwards;
+}
+@keyframes scaleBg {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header__banner {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  perspective: 100rem;
+  overflow: hidden;
+}
+.header__banner h1 {
+  font-family: var(--primary-font);
+  font-size: 8rem;
+  font-weight: 400;
+  color: #fff;
+  width: 50%;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  animation: moveBanner 1s 0.5s;
+  animation-fill-mode: forwards;
+}
+.header__banner p {
+  font-family: var(--secondary-font);
+  font-size: 4rem;
+  color: #fff;
+  width: 70%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  animation: moveBanner 1s 0.7s;
+  animation-fill-mode: forwards;
+}
+.header__banner button {
+  width: 25rem;
+  height: 7rem;
+  background-color: #c29525;
+  font-family: var(--tertiary-font);
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: moveBanner 1s 0.9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveBanner {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
 }

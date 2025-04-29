@@ -30,15 +30,19 @@
       <section class="sidebar">
         <ul class="sidebar__menu">
           <li class="sidebar__menu-item">
-            <a href="#" class="menu__item--link" data-content="Home">Home</a>
+            <a href="#home" class="menu__item--link" data-content="Home"
+              >Home</a
+            >
           </li>
           <li class="sidebar__menu-item">
-            <a href="#" class="menu__item--link" data-content="About Us"
+            <a href="#about-us" class="menu__item--link" data-content="About Us"
               >About Us</a
             >
           </li>
           <li class="sidebar__menu-item">
-            <a href="#" class="menu__item--link" data-content="Team">Team</a>
+            <a href="#team" class="menu__item--link" data-content="Team"
+              >Team</a
+            >
           </li>
           <li class="sidebar__menu-item">
             <a href="#" class="menu__item--link" data-content="Pricing"
@@ -46,7 +50,7 @@
             >
           </li>
           <li class="sidebar__menu-item">
-            <a href="#" class="menu__item--link" data-content="Contact"
+            <a href="#contact" class="menu__item--link" data-content="Contact"
               >Contact</a
             >
           </li>
@@ -64,7 +68,7 @@
         </div>
       </section>
       <!-- Header section-->
-      <header class="header">
+      <header class="header" id="home">
         <div class="header__image">
           <img src="./images/bg.jpg" alt="" class="header__image-img" />
         </div>
@@ -78,7 +82,7 @@
         </div>
       </header>
       <!-- About Us section -->
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="section__header">
           <h1 class="section__heading">About Us</h1>
           <div class="underline"></div>
@@ -174,7 +178,7 @@
         </div>
       </section>
       <!-- Cards (Team) section -->
-      <section class="team">
+      <section class="team" id="team">
         <div class="section__header">
           <h1 class="section__heading">Our Team</h1>
           <div class="underline"></div>
@@ -228,7 +232,47 @@
         </div>
       </section>
       <!-- Contacts section -->
+      <section class="contact" id="contact">
+        <div class="contact__wrapper">
+          <div class="contact__left"></div>
+          <div class="contact__right">
+            <h1 class="contact-heading">Contact</h1>
+            <form action="">
+              <!--  -->
+              <div class="input-group">
+                <input type="text" id="name" class="field" placeholder="" />
+                <label for="name" class="label">Full Name</label>
+              </div>
+              <!--  -->
+              <div class="input-group">
+                <input type="email" id="email" class="field" placeholder="" />
+                <label for="email" class="label">Email</label>
+              </div>
+              <!--  -->
+              <div class="input-group">
+                <textarea name="" id="message" class="field"></textarea>
+                <label for="message" class="label msg-label">Message</label>
+              </div>
+              <input type="submit" class="submit-btn" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__content">
+          <p class="copyright">Copyright &copy; CaC - All Rights Reserved</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
     </div>
+    <a href="#home" class="scroll-btn">
+      <i class="fas fa-arrow-up"></i>
+    </a>
     <!-- ---------------------------------------- -->
     <script src="script.js"></script>
     <!-- jquery -->

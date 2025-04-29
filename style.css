@@ -191,7 +191,7 @@ fieldset {
 .social-media a i:hover {
   background-color: var(--primary-color);
 }
-/* ------------------HEADER section------------------ */
+/* ----------------HEADER section-------------- */
 .header {
   width: 100%;
   height: 100vh;
@@ -275,7 +275,7 @@ fieldset {
   }
 }
 
-/* ------------------ABOUT US section------------------ */
+/* ---------------ABOUT US section-------------- */
 .about-us {
   width: 100%;
   height: 120vh;
@@ -350,7 +350,7 @@ fieldset {
   width: 100%;
   opacity: 0.8;
 }
-/* ------------------CARDS (TEAM) section------------------ */
+/* ------------CARDS (TEAM) section------------ */
 .team {
   width: 100%;
   display: flex;
@@ -436,4 +436,140 @@ fieldset {
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 
-/* ------------------CONTACTS section------------------ */
+/* --------------CONTACTS section-------------- */
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__wrapper {
+  width: 60%;
+  height: 65rem;
+  display: flex;
+  box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
+}
+.contact__left {
+  flex-basis: 35%;
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+    url(./images/contact-bg.jpg) center / cover no-repeat;
+}
+.contact__right {
+  flex-basis: 65%;
+  background-color: #eee;
+  padding: 3rem 10rem 10rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.contact-heading {
+  font-family: var(--primary-font);
+  font-size: 6rem;
+  font-weight: 300;
+  color: #272727;
+  text-align: center;
+}
+.contact__right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-group {
+  position: relative;
+}
+.field {
+  width: 45rem;
+  border-bottom: 0.2rem dashed #636363;
+  margin: 3rem 0 2rem 0;
+  padding: 1rem 1rem 1rem 0;
+  font-family: var(--tertiary-font);
+  color: #4b4b4b;
+}
+.field:focus {
+  border-bottom: 0.2rem solid #636363;
+}
+.label {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.msg-label {
+  bottom: 6rem;
+}
+.field:focus ~ .label {
+  transform: translateY(-3rem);
+  font-size: 1.2rem;
+}
+.input-group textarea {
+  max-width: 45rem;
+  min-width: 45rem;
+  max-height: 7rem;
+}
+.submit-btn {
+  width: 45rem;
+  height: 5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: 2rem;
+  font-family: var(--tertiary-font);
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+/* --------------FOOTER section-------------- */
+.footer {
+  width: 100%;
+  height: 15rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  color: #a7a7a7;
+}
+.social-links {
+  display: flex;
+  gap: 4rem;
+}
+.social-links a {
+}
+.social-links a i {
+  font-size: 2rem;
+  color: #a7a7a7;
+}
+
+.scroll-btn {
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-btn i {
+  font-size: 2rem;
+  color: #fff;
+}
